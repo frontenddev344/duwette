@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --Primary:#b89146;
+    --Secondary:#333;
+    --bg:#f7f7f7;
+    --white:#fff;         
+}
+
+/* global css start here */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    /* background-color: var(--bg); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Archivo", sans-serif;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Archivo", sans-serif;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+img {
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.ptb-50{
+    padding: 50px 0;
+}
+.ptb-70{
+    padding: 70px 0;
+}
+.pb-70{
+    padding-bottom: 70px;
+}
+/* global css end here */
+/* header css start  */
+.site-header{
+    position: fixed;
+    top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+
+}
+.header-wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 10px;
+    transition: all 0.3s linear;
+}
+.header-wrap:hover, .fixed-header .header-wrap{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+
+}
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+.top-left, .site-logo, .top-right{
+    width: 33.3%;
+}
+.site-logo {
+    text-align: center;
+}
+.site-logo img {
+    max-width: 200px;
+}
+.top-left a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Secondary);
+    text-transform: uppercase;
+}
+.top-left a:hover, .top-left a.active{
+    color: var(--Primary);
+}
+.social-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.social-links ul li a{
+    border: 1px solid #333;
+    color: var(--Secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    transition: all 0.3s linear;
+  
+}
+.social-links ul li a:hover{
+    background-color: var(--Primary);
+    color: var(--white);
+    border-color: #b89146;
+}
+.social-links ul li{
+    padding-inline-start: 15px;
+}
+
+/* main nav */
+.main-nav{
+    padding: 15px 0;
+}
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav ul li{
+    margin: 0 20px;
+}
+.main-nav ul li a{
+    font-size: 18px;
+    color: var(--Secondary);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.main-nav ul li a:hover, .main-nav ul li a.active{
+    color: var(--Primary);
+}
+
+/* header css end  */
+
+/* banner css start here */
+
+.banner-txt{
+  margin-top: 250px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.banner-txt h1{
+    font-size: 50px;
+    width: 70%;
+    margin: 0 auto;
+}
+.main-img {
+    height: 500px;
+    overflow: hidden;
+}
+.main-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.main-wrap{
+    background-color: var(--white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.main-wrap .row{
+    align-items: center;
+}
+.main-txt{
+    padding: 40px;
+}
+.main-txt h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--Primary);
+}
+.main-txt p{
+    font-size: 18px;
+    color: var(--Secondary);
+}
