@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
-    --Primary:#b89146;
-    --Secondary:#333;
-    --bg:#f7f7f7;
-    --white:#fff;         
+    --Primary: #b89146;
+    --Secondary: #333;
+    --bg: #f7f7f7;
+    --white: #fff;
 }
 
 /* global css start here */
@@ -41,16 +41,19 @@ a {
     text-decoration: none;
     font-family: "Archivo", sans-serif;
 }
+
 .container {
     max-width: 1920px;
     margin: 0 auto;
     padding-left: 2%;
     padding-right: 2%;
 }
+
 img {
     width: 100%;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,21 +62,26 @@ img {
     background-color: #000;
     opacity: 0.3;
 }
-.ptb-50{
+
+.ptb-50 {
     padding: 50px 0;
 }
-.ptb-70{
+
+.ptb-70 {
     padding: 70px 0;
 }
-.pb-50{
+
+.pb-50 {
     padding-bottom: 50px;
 }
-.pb-70{
+
+.pb-70 {
     padding-bottom: 70px;
 }
+
 /* global css end here */
 /* header css start  */
-.site-header{
+.site-header {
     position: fixed;
     top: 20px;
     padding-left: 2%;
@@ -83,17 +91,21 @@ img {
     z-index: 3;
 
 }
+
 .header-wrap {
     max-width: 1920px;
     margin: 0 auto;
     padding: 0 10px;
     transition: all 0.3s linear;
 }
-.header-wrap:hover, .fixed-header .header-wrap{
+
+.header-wrap:hover,
+.fixed-header .header-wrap {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: #fff;
 
 }
+
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -101,30 +113,40 @@ img {
     padding: 15px 0;
     border-bottom: 1px solid #333;
 }
-.top-left, .site-logo, .top-right{
+
+.top-left,
+.site-logo,
+.top-right {
     width: 33.3%;
 }
+
 .site-logo {
     text-align: center;
 }
+
 .site-logo img {
     max-width: 200px;
 }
+
 .top-left a {
     font-size: 18px;
     font-weight: 500;
     color: var(--Secondary);
     text-transform: lowercase;
 }
-.top-left a:hover, .top-left a.active{
+
+.top-left a:hover,
+.top-left a.active {
     color: var(--Primary);
 }
+
 .social-links ul {
     display: flex;
     align-items: center;
     justify-content: end;
 }
-.social-links ul li a{
+
+.social-links ul li a {
     border: 1px solid #333;
     color: var(--Secondary);
     display: flex;
@@ -134,38 +156,50 @@ img {
     width: 40px;
     border-radius: 40px;
     transition: all 0.3s linear;
-  
+
 }
-.social-links ul li a:hover{
+
+.social-links ul li a:hover {
     background-color: var(--Primary);
     color: var(--white);
     border-color: #b89146;
 }
-.social-links ul li{
+
+.social-links ul li {
     padding-inline-start: 15px;
 }
-.toggle, .close, .mobile-block, .mobile-social{
+
+.toggle,
+.close,
+.mobile-block,
+.mobile-social {
     display: none;
 }
+
 /* main nav */
-.main-nav{
+.main-nav {
     padding: 15px 0;
 }
+
 .main-nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main-nav ul li{
+
+.main-nav ul li {
     margin: 0 20px;
 }
-.main-nav ul li a{
+
+.main-nav ul li a {
     font-size: 18px;
     color: var(--Secondary);
     font-weight: 500;
     text-transform: uppercase;
 }
-.main-nav ul li a:hover, .main-nav ul li a.active{
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
     color: var(--Primary);
 }
 
@@ -173,44 +207,52 @@ img {
 
 /* banner css start here */
 
-.banner-txt{
-  margin-top: 250px;
-  margin-bottom: 70px;
-  text-align: center;
+.banner-txt {
+    margin-top: 250px;
+    margin-bottom: 70px;
+    text-align: center;
 }
-.banner-txt h1{
+
+.banner-txt h1 {
     font-size: 50px;
     width: 70%;
     margin: 0 auto;
 }
+
 .main-img {
     height: 500px;
     overflow: hidden;
 }
-.main-img img{
+
+.main-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.main-wrap{
+
+.main-wrap {
     background-color: var(--white);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     overflow: hidden;
     margin-bottom: 30px;
 }
-.main-wrap .row{
+
+.main-wrap .row {
     align-items: center;
 }
-.main-txt{
+
+.main-txt {
     padding: 40px;
 }
+
 .main-txt h3 {
     font-size: 30px;
     margin-bottom: 20px;
     color: var(--Primary);
 }
-.main-txt p{
+
+.main-txt p {
     font-size: 18px;
     color: var(--Secondary);
 }
@@ -220,57 +262,70 @@ img {
 .accordion-button::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
     transition: all 0.5s;
-  }
-  .accordion-button:not(.collapsed)::after {
+}
+
+.accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
-  }
-  .accordion-button::after {
+}
+
+.accordion-button::after {
     transition: all 0.5s;
-  }
-  
-  .accordion-item {
+}
+
+.accordion-item {
     background-color: #fff;
     border: none;
 }
-.accordion-button:not(.collapsed), .accordion-button {
+
+.accordion-button:not(.collapsed),
+.accordion-button {
     color: #fff;
     background-color: #b89146;
     box-shadow: none;
 }
+
 .accordion-item {
     margin-bottom: 15px;
 }
+
 .accordion-body {
     padding: 1rem 1.25rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 :focus-visible {
     outline: none;
 }
+
 .accordion-button:focus {
     z-index: 3;
     border-color: transparent;
     outline: 0;
     box-shadow: none;
 }
- .accordion-button{
+
+.accordion-button {
     border-radius: 10px !important;
-    font-size:18px;
+    font-size: 18px;
 }
-.accordion-button:not(.collapsed){
+
+.accordion-button:not(.collapsed) {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
+
 .accordion-button::after {
     filter: brightness(0) invert(1);
 }
-.site-heading h2{
+
+.site-heading h2 {
     font-size: 35px;
     color: var(--Primary);
     text-align: center;
     margin-bottom: 40px;
     font-weight: 600;
 }
+
 div#accordionExample {
     max-width: 900px;
     margin: 0 auto;
@@ -293,38 +348,54 @@ div#accordionExample {
     text-align: center;
     color: var(--Secondary);
 }
-.address p{
+
+.address p {
     font-size: 16px;
     font-style: italic;
     color: #000;
     font-weight: 600;
     margin-bottom: 5px;
 }
-.address p span{
+
+.address p span {
     font-size: 18px;
 }
-.address p:last-child{
+
+.address p:last-child {
     margin-bottom: 16px;
 }
-.explore-btn a{
-padding: 8px 30px;
-border: 1px solid #b89146;
-background-color: var(--Primary);
-color: var(--white);
-font-size: 16px;
-font-weight: 600;
-display: inline-block;
+
+.explore-btn a {
+    padding: 8px 30px;
+    border: 1px solid #b89146;
+    background-color: var(--Primary);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
 }
-.gambling-dic h4{
+
+.explore-btn a:hover {
+    background-color: transparent;
+    color: #b89146;
+}
+
+.gambling-dic h4 {
     font-size: 20px;
     color: var(--Primary);
 }
-.gambling-dic p{
+
+.gambling-dic p {
     font-size: 16px;
     color: var(--Secondary);
 }
 
-.bottom-txt h3{
+.bottom-txt h3 {
     font-size: 25px;
 }
 
@@ -335,12 +406,14 @@ display: inline-block;
 
 
 /* footer css start  */
-.site-footer{
+.site-footer {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 .footer-logo {
     text-align: center;
 }
+
 .footer-logo img {
     max-width: 300px;
 }
@@ -352,31 +425,38 @@ display: inline-block;
     margin: 15px 0;
     flex-wrap: wrap;
 }
-.footer-links ul li{
+
+.footer-links ul li {
     padding: 0 15px;
 }
-.footer-links ul li a{
+
+.footer-links ul li a {
     font-size: 18px;
     text-transform: capitalize;
     color: var(--Secondary);
     transition: all 0.3s linear;
 }
-.footer-links ul li a:hover{
+
+.footer-links ul li a:hover {
     color: var(--Primary);
 }
+
 .copy-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #cdc7c7;
     margin-top: 30px;
-    padding-top:20px ;
+    padding-top: 20px;
 }
-.copy-right p{
+
+.copy-right p {
     font-size: 18px;
     margin-bottom: 0;
 }
+
 .footer-social {
     margin-bottom: 15px;
 }
+
 /* footer css end  */
