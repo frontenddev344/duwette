@@ -1,0 +1,213 @@
+@media(max-width:1200px){
+    .top-left a, .main-nav ul li a, .main-txt p, .copy-right p, .footer-links ul li a, .restro-txt p {
+        font-size: 16px;
+    }
+    .address p {
+        font-size: 14px !important;
+    }
+    .address p span {
+        font-size: 16px;
+    }
+    .address p:last-child {
+        margin-bottom: 12px;
+    }
+    .explore-btn a {
+        font-size: 14px;
+    }
+    .site-logo img {
+        max-width: 180px;
+    }
+    .social-links ul li a {
+        height: 35px;
+        width: 35px;
+    }
+    .banner-txt h1 {
+        font-size: 45px;
+    }
+    .main-txt h3 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .main-txt {
+        padding: 20px;
+    }
+    .main-img {
+        height: 450px;
+    }
+    .site-heading h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    .accordion-button {
+        font-size: 16px;
+    }
+    .bottom-txt h3 {
+        font-size: 22px;
+    }
+    .gambling-dic p {
+        font-size: 14px;
+    }
+    .gambling-dic h4 {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:992px){
+    .toggle{
+        display: block;
+        font-size: 25px;
+    }
+    .top-left, .top-right{
+        display: none;
+    }
+    .site-logo {
+        text-align: left;
+    }
+    .main-nav ul {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        height: 100vh;
+        width: 400px;
+        padding: 50px;
+        transform: translateX(-100%);
+        transition: all 0.5s linear;
+}
+.menuToggle .main-nav{
+    transform: translateX(0%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+    .close {
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    .banner-txt {
+        margin-top: 200px;
+    }
+    .fixed-header .top-nav{
+        border-bottom: none;
+    }
+    .top-left, .site-logo, .top-right {
+        width: auto;
+    }
+    .mobile-block, .mobile-social {
+        display: block;
+    }
+    .mobile-block a{
+        text-transform: lowercase !important;
+    }
+    .mobile-social .social-links ul {
+        flex-direction: row !important;
+    }
+    .mobile-social .social-links ul li {
+        padding-inline-start: 0;
+        padding-inline-end: 10px;
+    }
+}
+@media(max-width:850px){
+    .banner-txt h1 {
+        font-size: 40px;
+    }
+    .main-txt h3 {
+        font-size: 22px;
+    }
+    .top-left a, .main-nav ul li a, .main-txt p, .copy-right p, .footer-links ul li a {
+        font-size: 14px;
+    }
+    .main-txt {
+        padding: 10px;
+    }
+    .site-heading h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .accordion-body {
+        font-size: 14px;
+    }
+    .accordion-button {
+        font-size: 16px;
+        padding: 13px;
+    }
+    .ptb-70 {
+        padding: 50px 0;
+    }
+    .footer-logo img {
+        max-width: 250px;
+    }
+    .pb-50 {
+        padding-bottom: 30px;
+    }
+    .main-img {
+        height: 500px;
+    }
+    .bottom-txt h3 {
+        font-size: 20px;
+    }
+}
+@media(max-width:767px){
+    .site-header {
+        top: 10px;
+    }
+    .banner-txt h1 {
+        font-size: 35px;
+        width: 95%;
+    }
+    .banner-txt {
+        margin-top: 180px;
+        margin-bottom: 50px;
+    }
+    .main-img {
+        height: 300px;
+    }
+    .first-row .row{
+        flex-direction: column-reverse;
+    }
+    .site-heading h2 {
+        font-size: 25px;
+        padding: 0 5px;
+        margin-bottom: 25px;
+    }
+    .footer-logo img {
+        max-width: 200px;
+    }
+    .copy-right {
+        flex-direction: column-reverse;
+    }
+    .ptb-50 {
+        padding: 30px 0;
+    }
+    .address p span, .restro-txt p {
+        font-size: 14px;
+    }
+}
+@media(max-width:575px){
+    .main-nav {
+        width: 100%;
+        padding: 30px;
+    }
+    .address p {
+        font-size: 12px !important;
+    }
+}
+@media(max-width:375px){
+    .banner-txt {
+        margin-top: 160px;
+        margin-bottom: 50px;
+    }
+    .banner-txt h1 {
+        font-size: 32px;
+    }
+}

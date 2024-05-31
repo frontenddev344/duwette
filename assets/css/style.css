@@ -65,6 +65,9 @@ img {
 .ptb-70{
     padding: 70px 0;
 }
+.pb-50{
+    padding-bottom: 50px;
+}
 .pb-70{
     padding-bottom: 70px;
 }
@@ -111,7 +114,7 @@ img {
     font-size: 18px;
     font-weight: 500;
     color: var(--Secondary);
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 .top-left a:hover, .top-left a.active{
     color: var(--Primary);
@@ -141,7 +144,9 @@ img {
 .social-links ul li{
     padding-inline-start: 15px;
 }
-
+.toggle, .close, .mobile-block, .mobile-social{
+    display: none;
+}
 /* main nav */
 .main-nav{
     padding: 15px 0;
@@ -209,3 +214,169 @@ img {
     font-size: 18px;
     color: var(--Secondary);
 }
+
+
+/* faq css start */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    transition: all 0.5s;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+  }
+  .accordion-button::after {
+    transition: all 0.5s;
+  }
+  
+  .accordion-item {
+    background-color: #fff;
+    border: none;
+}
+.accordion-button:not(.collapsed), .accordion-button {
+    color: #fff;
+    background-color: #b89146;
+    box-shadow: none;
+}
+.accordion-item {
+    margin-bottom: 15px;
+}
+.accordion-body {
+    padding: 1rem 1.25rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+:focus-visible {
+    outline: none;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+ .accordion-button{
+    border-radius: 10px !important;
+    font-size:18px;
+}
+.accordion-button:not(.collapsed){
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+.site-heading h2{
+    font-size: 35px;
+    color: var(--Primary);
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+div#accordionExample {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* faq css end */
+
+
+
+
+
+
+
+
+
+/* restro page css start  */
+.restro-txt p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: var(--Secondary);
+}
+.address p{
+    font-size: 16px;
+    font-style: italic;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.address p span{
+    font-size: 18px;
+}
+.address p:last-child{
+    margin-bottom: 16px;
+}
+.explore-btn a{
+padding: 8px 30px;
+border: 1px solid #b89146;
+background-color: var(--Primary);
+color: var(--white);
+font-size: 16px;
+font-weight: 600;
+display: inline-block;
+}
+.gambling-dic h4{
+    font-size: 20px;
+    color: var(--Primary);
+}
+.gambling-dic p{
+    font-size: 16px;
+    color: var(--Secondary);
+}
+
+.bottom-txt h3{
+    font-size: 25px;
+}
+
+
+/* restro page css end */
+
+
+
+
+/* footer css start  */
+.site-footer{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.footer-logo {
+    text-align: center;
+}
+.footer-logo img {
+    max-width: 300px;
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+.footer-links ul li{
+    padding: 0 15px;
+}
+.footer-links ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: var(--Secondary);
+    transition: all 0.3s linear;
+}
+.footer-links ul li a:hover{
+    color: var(--Primary);
+}
+.copy-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #cdc7c7;
+    margin-top: 30px;
+    padding-top:20px ;
+}
+.copy-right p{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.footer-social {
+    margin-bottom: 15px;
+}
+/* footer css end  */
