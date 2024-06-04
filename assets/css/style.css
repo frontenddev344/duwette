@@ -468,5 +468,37 @@ div#accordionExample {
 .footer-social {
     margin-bottom: 15px;
 }
+.mail_in_footer a{
+    color: #5f5f5f;
+    font-weight: 500;
+}
+
+
 
 /* footer css end  */
+
+
+.readmore__content {
+    width: 100%; 
+  }
+  
+  button.readmore__toggle {
+    padding: 8px 30px;
+    border: 1px solid #b89146;
+    background-color: var(--Primary);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+  }
+
+  button.readmore__toggle:hover
+  {
+    background-color: transparent;
+    color: #b89146;
+  } 
+  .readmore__content p{
+    margin-bottom: 15px;
+  }
